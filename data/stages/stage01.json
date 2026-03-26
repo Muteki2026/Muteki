@@ -1,0 +1,62 @@
+{
+  "name": "SECTOR 01 - SCRAP YARD",
+  "tileset": "arena",
+  "time_limit": 90,
+  "bounds": { "x": 0, "y": 0, "w": 1200, "h": 800 },
+  "walls": [
+    { "x": 300, "y": 350, "w": 80, "h": 40 },
+    { "x": 800, "y": 250, "w": 40, "h": 120 },
+    { "x": 500, "y": 600, "w": 120, "h": 30 }
+  ],
+  "waves": [
+    {
+      "time": 0,
+      "enemies": [
+        { "type": "flyer", "x": 200, "y": 150 },
+        { "type": "flyer", "x": 400, "y": 100 },
+        { "type": "flyer", "x": 800, "y": 200 }
+      ]
+    },
+    {
+      "time": 10,
+      "enemies": [
+        { "type": "flyer", "x": 100, "y": 200 },
+        { "type": "flyer", "x": 1100, "y": 200 },
+        { "type": "flyer", "x": 600, "y": 100 },
+        { "type": "flyer", "x": 700, "y": 100 }
+      ]
+    },
+    {
+      "time": 22,
+      "enemies": [
+        { "type": "flyer", "x": 200, "y": 200 },
+        { "type": "flyer", "x": 300, "y": 200 },
+        { "type": "flyer", "x": 1000, "y": 150 },
+        { "type": "flyer", "x": 500, "y": 700 },
+        { "type": "flyer", "x": 700, "y": 700 }
+      ]
+    },
+    {
+      "time": 38,
+      "enemies": [
+        { "type": "flyer", "x": 150, "y": 400 },
+        { "type": "flyer", "x": 1050, "y": 400 },
+        { "type": "flyer", "x": 400, "y": 150 },
+        { "type": "flyer", "x": 800, "y": 150 },
+        { "type": "flyer", "x": 600, "y": 300 }
+      ]
+    },
+    {
+      "time": 55,
+      "enemies": [
+        { "type": "flyer", "x": 600, "y": 300 },
+        { "type": "flyer", "x": 200, "y": 400 },
+        { "type": "flyer", "x": 1000, "y": 400 },
+        { "type": "flyer", "x": 400, "y": 700 },
+        { "type": "flyer", "x": 800, "y": 700 },
+        { "type": "flyer", "x": 600, "y": 100 }
+      ]
+    }
+  ],
+  "end_condition": "defeat_all"
+}

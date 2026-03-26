@@ -1,0 +1,79 @@
+{
+  "id": "player_zatan",
+  "name": "Zatan",
+  "description": "Dark-armored asymmetric combat mech. Red energy veins, purple overload accents, cyan sensor nodes.",
+
+  "movement": {
+    "speed": 280,
+    "accel": 1600,
+    "friction": 0.88,
+    "gravity": 320,
+    "hover_counter_gravity": 1.5
+  },
+
+  "dash": {
+    "speed": 800,
+    "duration": 0.13,
+    "cooldown": 0.8
+  },
+
+  "weapons": {
+    "seeker": {
+      "fire_rate": 0.09,
+      "projectile_type": "seekerDart",
+      "projectile_speed": 500,
+      "projectile_radius": 4,
+      "damage": 1,
+      "lifetime": 2,
+      "homing": 4,
+      "spread": 0.08,
+      "count": 2
+    },
+    "prism": {
+      "fire_rate": 0.15,
+      "projectile_type": "prismBeam",
+      "projectile_speed": 600,
+      "projectile_radius": 3,
+      "damage": 2,
+      "lifetime": 3,
+      "max_bounces": 5,
+      "spread": 0.04,
+      "count": 1
+    }
+  },
+
+  "counterburst": {
+    "max_charges": 5,
+    "sample_radius": 150,
+    "base_projectiles": 40,
+    "max_projectiles": 420,
+    "charge_rate": 0.8,
+    "projectile_type": "counterBurst",
+    "projectile_speed_min": 350,
+    "projectile_speed_max": 500,
+    "projectile_damage": 3,
+    "projectile_radius": 3,
+    "projectile_life": 1.2
+  },
+
+  "stats": {
+    "max_hp": 10,
+    "collision_radius": 10,
+    "invincibility_time": 1.5
+  },
+
+  "visual": {
+    "colors": {
+      "armor": "#2a2a35",
+      "armor_dark": "#1a1a22",
+      "armor_highlight": "#3a3a48",
+      "vein_red": "#cc2233",
+      "vein_red_glow": "#ff3344",
+      "overload_purple": "#9933ff",
+      "overload_purple_glow": "#cc66ff",
+      "sensor_cyan": "#00e5ff",
+      "sensor_cyan_glow": "#66ffff",
+      "core_white": "#ffffff"
+    }
+  }
+}

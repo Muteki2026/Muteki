@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>MUTEKI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="touchControls">
+        <div id="joystickArea" class="touch-zone left"></div>
+        <div id="buttonArea" class="touch-zone right">
+            <button id="btnFire" class="game-btn fire">FIRE</button>
+            <button id="btnSwitch" class="game-btn mode">MODE</button>
+            <button id="btnBurst" class="game-btn burst">BURST</button>
+            <button id="btnDash" class="game-btn dash">DASH</button>
+        </div>
+    </div>
+    <div id="titleScreen">
+        <div class="title-content">
+            <h1>MUTEKI</h1>
+            <p class="subtitle">NEON SALVAGE PROTOCOL</p>
+            <button id="btnStart" class="menu-btn">START MISSION</button>
+            <p class="controls-hint">
+                WASD/Arrows: Move &nbsp;|&nbsp; Mouse: Aim &nbsp;|&nbsp; Click: Fire<br>
+                Space: Counterburst &nbsp;|&nbsp; Shift: Dash &nbsp;|&nbsp; Tab: Switch Mode<br>
+                <span style="color:rgba(204,34,51,0.5); font-size:9px;">PILOT: ZATAN</span>
+            </p>
+        </div>
+    </div>
+    <div id="gameOverScreen" class="hidden">
+        <div class="title-content">
+            <h1 class="go-title">MISSION OVER</h1>
+            <p class="final-score">SCORE: <span id="finalScore">0</span></p>
+            <button id="btnRestart" class="menu-btn">RETRY</button>
+        </div>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/projectiles.js"></script>
+    <script src="js/pickups.js"></script>
+    <script src="js/cascade.js"></script>
+    <script src="js/enemies.js"></script>
+    <script src="js/bosses.js"></script>
+    <script src="js/zatan-renderer.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/hud.js"></script>
+    <script src="js/stages.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

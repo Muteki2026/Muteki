@@ -1,0 +1,138 @@
+{
+  "id": "player_zatan",
+  "name": "Zatan",
+  "description": "Dark-armored asymmetric combat mech. Red energy veins, purple overload accents, cyan sensor nodes.",
+
+  "movement": {
+    "speed": 280,
+    "accel": 1600,
+    "friction": 0.88,
+    "gravity": 320,
+    "hoverCounterGravity": 1.5
+  },
+
+  "dash": {
+    "speed": 800,
+    "duration": 0.13,
+    "cooldown": 0.8
+  },
+
+  "weapons": {
+    "seeker": {
+      "fireRate": 0.09,
+      "projectileType": "seekerDart",
+      "projectileSpeed": 500,
+      "projectileRadius": 4,
+      "damage": 1,
+      "lifetime": 2,
+      "homing": 4,
+      "spread": 0.08,
+      "count": 2
+    },
+    "prism": {
+      "fireRate": 0.15,
+      "projectileType": "prismBeam",
+      "projectileSpeed": 600,
+      "projectileRadius": 3,
+      "damage": 2,
+      "lifetime": 3,
+      "maxBounces": 5,
+      "spread": 0.04,
+      "count": 1
+    }
+  },
+
+  "counterburst": {
+    "maxCharges": 5,
+    "sampleRadius": 150,
+    "baseProjectiles": 40,
+    "maxProjectiles": 420,
+    "chargeRate": 0.8,
+    "projectileType": "counterBurst",
+    "projectileSpeedMin": 350,
+    "projectileSpeedMax": 500,
+    "projectileDamage": 3,
+    "projectileRadius": 3,
+    "projectileLife": 1.2
+  },
+
+  "stats": {
+    "maxHp": 10,
+    "collisionRadius": 10,
+    "invincibilityTime": 1.5
+  },
+
+  "visual": {
+    "bodyScale": 1.0,
+    "colors": {
+      "armor": "#2a2a35",
+      "armorDark": "#1a1a22",
+      "armorHighlight": "#3a3a48",
+      "veinRed": "#cc2233",
+      "veinRedGlow": "#ff3344",
+      "overloadPurple": "#9933ff",
+      "overloadPurpleGlow": "#cc66ff",
+      "sensorCyan": "#00e5ff",
+      "sensorCyanGlow": "#66ffff",
+      "coreWhite": "#ffffff"
+    },
+    "emissive": {
+      "baseIntensity": 0.4,
+      "chargeIntensity": 1.0,
+      "cascadeIntensityBonus": 0.3,
+      "invincibleIntensity": 1.0
+    }
+  },
+
+  "animation": {
+    "states": [
+      "idle",
+      "move",
+      "dash",
+      "charge",
+      "fire",
+      "hit",
+      "invincible"
+    ],
+    "idle": {
+      "hoverAmplitude": 1.5,
+      "hoverFrequency": 2.0,
+      "veinPulseSpeed": 1.5
+    },
+    "move": {
+      "tiltAmount": 0.15,
+      "thrustParticleRate": 2
+    },
+    "dash": {
+      "afterimageCount": 4,
+      "afterimageLifetime": 0.25,
+      "smearStretch": 1.3
+    },
+    "charge": {
+      "veinIntensifyRate": 2.0,
+      "overloadGlowRate": 3.0,
+      "shakeAmplitude": 1.0
+    },
+    "fire": {
+      "recoilAmount": 2,
+      "muzzlePulseSize": 6,
+      "muzzlePulseLife": 0.08
+    },
+    "hit": {
+      "flashColor": "#ff4444",
+      "flashDuration": 0.08
+    },
+    "invincible": {
+      "shimmerSpeed": 8,
+      "pulseColor": "#ffd740"
+    }
+  },
+
+  "controls": {
+    "move": ["KeyW", "KeyA", "KeyS", "KeyD", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"],
+    "fire": "mouse_left",
+    "modeSwap": "Tab",
+    "counterburst": "Space",
+    "dash": ["ShiftLeft", "ShiftRight"]
+  }
+}
